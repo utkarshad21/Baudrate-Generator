@@ -1,5 +1,9 @@
 `timescale 1ns / 1ps
 //
+// Engineer: Utkarsha
+// Project Name: Baudrate Generator
+//
+// Description: 
 //In UART communication the receiver does not share the same clock as the transmitter.
 //Both devices only agree on the baud rate, but their clocks may have small errors.
 //Example:
@@ -12,17 +16,17 @@
 //Noise or jitter can cause wrong bit detection
 //
 // Instead of sampling once per bit, the receiver samples multiple times per bit.
-//Most UARTs use 16× oversampling.
+//Most UARTs use 16Ã— oversampling.
 //
-// Sampling each UART bit many times (usually 16×) to accurately detect the bit value even if clocks are slightly mismatched or noise is present.
+// Sampling each UART bit many times (usually 16Ã—) to accurately detect the bit value even if clocks are slightly mismatched or noise is present.
 //
-// To support 16× oversampling, your baud generator must generate a tick that is 16 times faster than the baud rate.
+// To support 16Ã— oversampling, your baud generator must generate a tick that is 16 times faster than the baud rate.
 //
 // Baud rate generator with 16x oversampling
-// Oversample Tick = BaudRate × 16
-// Divider = Clock / (BaudRate × 16)
+// Oversample Tick = BaudRate Ã— 16
+// Divider = Clock / (BaudRate Ã— 16)
 //
-// Baud Rate  Divider (100MHz / (baud×16)) 
+// Baud Rate  Divider (100MHz / (baudÃ—16)) 
 // 9600       651                          
 // 19200      326                          
 // 38400      163                          
