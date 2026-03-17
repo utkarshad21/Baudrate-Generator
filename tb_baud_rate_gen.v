@@ -1,5 +1,8 @@
 `timescale 1ns / 1ps
-
+//
+// Engineer: Utkarsha
+// Project Name: Baudrate Generator
+//
 module tb_baud_rate_gen;
 
 reg clk;
