@@ -1,8 +1,6 @@
 `timescale 1ns / 1ps
-
 //
 // Engineer: Utkarsha
-// 
 // Project Name: Baudrate Generator
 //
 // Description: 
