@@ -1,5 +1,11 @@
 `timescale 1ns / 1ps
 
+//
+// Engineer: Utkarsha
+// 
+// Project Name: Baudrate Generator
+//
+// Description: 
 // Baud rate Generator converts fast clock to slow timing.
 // Formula to Generate Baud Rate:
 // Divider = Clock Frequency / Baud Rate
